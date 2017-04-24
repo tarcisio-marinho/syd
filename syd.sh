@@ -2,8 +2,9 @@
 
 if [ "$1" == "" ]; then
 	echo "Digite os argumentos após o nome do script, com um esapço entre eles."
-	echo "Ex: $0 nome-do-arquivo nome-da-alteração nome-branch 1/2"
+	echo "Ex: $0 nome-do-arquivo nome-da-alteração nome-remoto(origin) 1/2"
 	echo "Após o nome do branch digite o número 1 para salvar login e senha do seu github, e 2 para não salvar."
+	echo "o branch padrão é o master"
 fi
 
 if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" == "1" ] ; then
