@@ -18,5 +18,5 @@ if [ "$1" != "" ] && [ "$2" != "" ] && [ "$3" != "" ] && [ "$4" == "2" ] ; then
 	git add $1
 	git commit -m $2
 	git push $3 master
-	echo "Sua senha não foi salva, como desejado."
+	echo "Não precisou salvar a senha."
 fi
