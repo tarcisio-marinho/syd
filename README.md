@@ -11,3 +11,4 @@ créditos: https://github.com/leeashley
 # Terminal Comand
 
     sudo cp syd /usr/bin/
+    sudo cp pull.sh /usr/bin/pull
