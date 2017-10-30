@@ -4,18 +4,24 @@
 
 
 int main(int argc, char *argv[]){
-    char * comand;
+    char *add, *commit, *push;
     int i;
+    add = (char *)malloc(sizeof(char) * (10));
+    push =(char *)malloc(sizeof(char) * (23));
+    commit = (char *)malloc(sizeof(char) * (1000));
 
-    comand = (char *)malloc(sizeof(char) * (1000));    
-    strcpy(comand, "git commit -m ' ");
+    strcpy(add, "git add *");
+    strcpy(push, "git push origin master");
+    strcpy(commit, "git commit -m '");
     for (i = 1; i<argc; i++){
-        strcat(comand, argv[i]);
-        strcat(comand, " ");
-        
+        strcat(commit, argv[i]);
+        strcat(commit, " ");
     }
-    printf("%s\n", comand);
+    strcat(commit, "'");
 
+    system(add);
+    system(commit);
+    system(push);
     
     return 0;
 }
