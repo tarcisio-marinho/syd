@@ -6,6 +6,12 @@
 int main(int argc, char *argv[]){
     char *add, *commit, *push;
     int i;
+
+    if(argc == 1){    
+        printf("Você não deu o nome do commit\nUsage:\n%s nome do commit\n", argv[0]);
+        return -1;
+    }   
+
     add = (char *)malloc(sizeof(char) * (10));
     push =(char *)malloc(sizeof(char) * (23));
     commit = (char *)malloc(sizeof(char) * (1000));
@@ -22,6 +28,10 @@ int main(int argc, char *argv[]){
     system(add);
     system(commit);
     system(push);
-    
+
+    free(add);
+    free(commit);
+    free(push);
+
     return 0;
 }
