@@ -1,9 +1,12 @@
 # syd
-Github commit automatization tool
+Github commit/clonning automatization tool
 
 # Compiling 
 
     gcc syd.c -o syd
+    
+    g++ clone.cpp -o clone
+
     
 # Terminal Comand
 
