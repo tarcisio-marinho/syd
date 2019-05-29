@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
     commit = (char *)malloc(sizeof(char) * (1000));
 
     strcpy(add, "git add *");
-    strcpy(push, "git push origin master");
+    strcpy(push, "git push");
     strcpy(commit, "git commit -m '");
     for (i = 1; i<argc; i++){
         strcat(commit, argv[i]);
