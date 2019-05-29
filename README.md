@@ -1,18 +1,31 @@
+
 # syd
-Github commit/clonning automatization tool
+Github commit automatization tool
 
-# Compiling 
+# clone
 
-    gcc syd.c -o syd
-    
-    g++ clone.cpp -o clone
+git clonning tool
 
-    
+# pull
+
+git update repository
+
+# xdg
+
+xdg-open path
+
+# c
+
+Copy absolute path from files
+
+
 # Terminal Comand
 
     sudo cp syd /usr/bin/
     sudo cp pull.sh /usr/bin/pull
     sudo cp clone /usr/bin/clone
+    sudo cp c /usr/bin/c
+    sudo cp xdg /usr/bin/xdg
 
 # USAGE
 
@@ -29,3 +42,9 @@ Github commit/clonning automatization tool
     PULL:
 
         pull
+
+    XDG:
+        xdg (path)
+    
+    C:
+        c [path]
